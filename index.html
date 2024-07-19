@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    autoScroll & splide
+    <!-- autoScroll & splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <script
@@ -22,9 +22,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
 
-    <!-- js -->
-    <!-- <script src="js/anim.js"></script> -->
-    <script src="js/iconAnim.js"></script>
+    
 
     <!-- google fonts (Gilda Display, Cormorant Garamond)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +37,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <div class="preloader">
         <div class="preloader-text">
             <h4 class="preloader-text-1">My Little</h4>
@@ -86,11 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="bottom-header-img" src="img/second_background.png" alt="">
-                <video class="grain-overlay" autoplay muted loop>
-                    <source src="videos/grain-2.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video></img>
+                <img class="bottom-header-img" src="img/second_background.png" alt=""></img>
                 <div class="bottom-header-text">
                     <h2 class="bottom-header-title">CAPTURING</h2>
                     <h1 class="bottom-header-title-2">MEMORIES</h1>
@@ -123,6 +118,7 @@
         </div>
     </header>
 </body>
-
-
+<!-- js -->
+<script src="js/gsap.js"></script>
+<script src="js/iconAnim.js"></script>
 </html>
