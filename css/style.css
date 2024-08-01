@@ -426,6 +426,7 @@ header{
 /* photography */
 .photography-box {
     position: relative;
+    cursor: pointer;
 }
 
 .p-box-title{
