@@ -51,7 +51,7 @@ html {
     background-color: black;
     z-index: 9999;
     pointer-events: none;
-    opacity: 0;
+    opacity: 1;
 }
 /* header */
 
