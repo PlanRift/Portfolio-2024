@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var arrowIcon = document.getElementById('arrowIcon');
-  arrowIcon.addEventListener('click', function () {
+  var dot = document.getElementById('dot');
+  dot.addEventListener('click', function () {
     this.classList.toggle('open');
   });
 });
@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
 // script.js
 
 document.addEventListener('DOMContentLoaded', function () {
-  const arrowIcon = document.getElementById('arrowIcon');
+  const dot = document.getElementById('dot');
   const drawer = document.querySelector('.drawer');
   const blackTint = document.querySelector(".black-tint")
   const originalBottom = getComputedStyle(drawer).bottom; // Store the original bottom value
   let drawerOpen = false;
 
-  arrowIcon.addEventListener('click', function () {
+  dot.addEventListener('click', function () {
     if (drawerOpen) {
       drawer.style.bottom = originalBottom;
       blackTint.style.opacity = '0'; // Move drawer back to its original position

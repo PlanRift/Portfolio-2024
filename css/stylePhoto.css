@@ -35,8 +35,6 @@ li {
 html,
 body {
     height: 100%;
-    overflow: hidden !important;
-    overflow-y: hidden !important;
     margin: 0;
 }
 
@@ -53,15 +51,70 @@ html {
     background-color: black;
     z-index: 9999;
     pointer-events: none;
-    opacity: 1;
+    opacity: 0;
+}
+/* header */
+
+.header {
+    width: auto;
+    height: 80%;
+    display: flex;
+    margin: 0 5% ;
+    margin-bottom: 2rem;
+    align-items: center;
+    border-bottom: 2px;
+    border-color: white;
+    border-style: solid;
 }
 
-.testing {
-    font-size: 6rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 400;
+.textbox {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Gilda Display", serif;
+    pointer-events: none;
 }
+
+.textbox h3{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.main-header {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+/* image */
+
+.container {
+    padding: 2rem 5%;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.container .image-container {
+    display: flex;
+    gap: 1.4rem; /* Space between columns */
+    justify-content: space-between; /* Distributes columns evenly */
+}
+
+.container .image-container .column {
+    flex: 1; /* Makes each column take up equal space */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 1.4rem; /* Space between images within each column */
+}
+
+.container .image-container img {
+    width: 100%; /* Makes sure images fit within the column */
+    height: auto;
+    border-radius: 0.7rem;
+    transition: all 1s cubic-bezier(.3, 0, .05, .99);
+}
+
+.container .image-container img:hover {
+   transform: scale(1.05);
+}
+
